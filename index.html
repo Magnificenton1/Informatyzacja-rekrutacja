@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Formularz Rejestracyjny</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARZ REJESTRACYJNY</h1>
+        <h3>Proszę wypełnić potrzebne pola by przejść dalej</h3>
+    </header>
+    <main>
+        
+    <div class="registration-container">
+        <form id="form" action="/">
+
+        <div class="input-div">
+        <label for="name">Imię:</label>
+        <div class="errorMessage"></div>
+        <input class="registration-form-input" id="name" type="text"></input>
+        </div>
+
+        <div class="input-div">
+        <label for="surname">Nazwisko:</label>
+        <div class="errorMessage"></div>
+        <input class="registration-form-input" id="surname" type="text"></input>
+        </div>
+
+        <div class="input-div">
+        <label for="email">Email:</label>
+        <div class="errorMessage"></div>
+        <input class="registration-form-input" id="email" type="text"></input>
+        <!-- nie daje type="email" bo walidacją zajmuje się javascript przy pomocy regex -->
+        </div>
+        
+        <div class="input-div">
+        <label for="password">Hasło:</label>
+        <div class="errorMessage"></div>
+        <input class="registration-form-input" id="password" type="password"></input>
+        </div>
+
+        <div class="input-div">
+        <label for="password-repeat">Potwierdź hasło:</label>
+        <div class="errorMessage"></div>
+        <input class="registration-form-input" id="password-repeat" type="password"></input>
+        </div>
+
+        <button type="submit" class="registration-submit">Zarejestruj się</button>
+        </form>
+    </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

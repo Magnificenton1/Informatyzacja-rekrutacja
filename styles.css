@@ -1,0 +1,94 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    min-width: 840px;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('assets/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    height: 120px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    font-family: Trebuchet MS;
+    background-color: rgba(34, 34, 34, 0.904);
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.registration-container{
+    height: 675px;
+    width: 50%;
+    max-width: 500px;
+    padding-top: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(34, 34, 34, 0.904);
+}
+
+#form{
+    width: 100%;
+}
+
+label{
+    margin-left: 9%;
+    margin-bottom: 5px;
+
+    display: inline-block;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+    color: white;
+}
+.errorMessage{
+    display: inline-block;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(252, 17, 17);
+}
+
+.registration-form-input{
+    height: 40px;
+    width: 80%;
+    margin-left: 9%;
+    margin-bottom: 40px;
+    border-radius: 6px; 
+
+    border: 3px solid transparent; 
+    /* border musi byc transparent bo, potem zmienia kolor w zależności od poprawności inputu */
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 245, 235);
+}
+textarea:focus, .registration-form-input:focus{
+    outline: none;
+}
+
+.registration-submit{
+    height: 60px;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 9%;
+    border-radius: 6px;
+
+    font-family: Trebuchet MS;
+    font-size: 25px;
+    background-color: rgb(255, 245, 235);
+}
+
