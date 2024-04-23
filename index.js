@@ -19,7 +19,7 @@ form.addEventListener('submit', (e) => {
 //     ramki na zielony, czyli gdyby to było przekierowanie strony nie zmieniłby się kolor, co wygląda 
 //     lepiej i jest mniej irytujące według mnie
 
-const setError = (chosenInput, message) => { //przyjmuje message który się wyświetli jako wiadomość przy errorze - pojawi sie obok Label tego elementu
+const setError = (chosenInput, message) => {//przyjmuje message który się wyświetli jako wiadomość przy errorze - pojawi sie obok Label tego elementu
     const input_container = chosenInput.parentElement; // chosenInput to input przez który funkcja jest aktywowana
     const error = input_container.querySelector('.errorMessage');
 
